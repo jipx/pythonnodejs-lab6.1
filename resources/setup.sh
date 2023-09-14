@@ -18,7 +18,7 @@ FILE_PATH="/home/ec2-user/environment/pythonnodejs-lab6.1/resources/website_secu
 FILE_PATH_2="/home/ec2-user/environment/pythonnodejs-lab6.1/resources/permissions.py"
 
 
-aws s3 cp ./resources/website s3://$bucket/ --recursive --cache-control "max-age=0"
+aws s3 cp /home/ec2-user/environment/pythonnodejs-lab6.1/resources/website s3://$bucket/ --recursive --cache-control "max-age=0"
 
 sed -i "s/<FMI_1>/$bucket/g" $FILE_PATH_2
 

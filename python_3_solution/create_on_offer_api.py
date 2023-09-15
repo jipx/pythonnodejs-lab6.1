@@ -3,8 +3,8 @@ import boto3, json
 client = boto3.client('apigateway', region_name='us-east-1')
 
 
-api_id = '<FMI_1>'
-parent_id = '<FMI_2>'
+api_id = 'z5xzyweow0'
+parent_id = '2sz5fy'
 
 products = client.create_resource(
     restApiId=api_id,

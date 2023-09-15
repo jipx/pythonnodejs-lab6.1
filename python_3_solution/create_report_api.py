@@ -2,7 +2,7 @@ import boto3, json
 
 client = boto3.client('apigateway', region_name='us-east-1')
 
-api_id = '<FMI_1>'
+api_id = 'z5xzyweow0'
 
 resources = client.get_resources(restApiId=api_id)
 root_id = [resource for resource in resources["items"] if resource["path"] == "/"][0]["id"]

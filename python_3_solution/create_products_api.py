@@ -1,6 +1,6 @@
 import boto3, json
 
-client = boto3.client('<FMI>', region_name='us-east-1')
+client = boto3.client('apigateway', region_name='us-east-1')
 
 response = client.create_rest_api(
     name='ProductsApi',

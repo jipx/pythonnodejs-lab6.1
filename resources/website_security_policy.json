@@ -6,13 +6,13 @@
                "Principal": "*",
                "Action": "s3:GetObject",
                "Resource": [
-                   "arn:aws:s3:::<FMI_1>*",
+                   "arn:aws:s3:::<FMI_1>/*",
                    "arn:aws:s3:::<FMI_2>"
                ],
                "Condition": {
                    "IpAddress": {
                        "aws:SourceIp": [
-                           "<FMI_3>/32"
+                           "<FMI_3>"
                        ]
                    }
                }

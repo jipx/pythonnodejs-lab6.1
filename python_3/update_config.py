@@ -3,9 +3,9 @@
 '''
 import boto3
 S3API = boto3.client("s3", region_name="us-east-1") 
-bucket_name = "<FMI_1>"
+bucket_name = "jipx1234s3bucket1234"
 
-filename = "/home/ec2-user/environment/resources/website/config.js"
+filename = "/home/ec2-user/environment/pythonnodejs-lab6.1/resources/website/config.js"
 S3API.upload_file(filename, bucket_name, "config.js", ExtraArgs={'ContentType': "application/js", "CacheControl": "max-age=0"})
 
 

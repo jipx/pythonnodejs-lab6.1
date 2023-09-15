@@ -12,7 +12,7 @@
                "Condition": {
                    "IpAddress": {
                        "aws:SourceIp": [
-                           "<FMI_3>"
+                           "<FMI_3>/32"
                        ]
                    }
                }
@@ -22,7 +22,7 @@
                "Effect": "Deny",
                "Principal": "*",
                "Action": "s3:GetObject",
-               "Resource": "arn:aws:s3:::<FMI_4>",
+               "Resource": "arn:aws:s3:::<FMI_4>/report.html",
                "Condition": {
                    "StringNotEquals": {
                        "s3:authtype": "REST-QUERY-STRING"

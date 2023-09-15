@@ -10,7 +10,7 @@ const apiGateway = new AWS.APIGateway();
 
 (async () => {
   try {
-    const apiId = '4gqyc7oasi';
+    const apiId = 'ksazeh1aph';
 
     // Get resources and find the root resource ID
     const getResourcesResponse = await apiGateway.getResources({ restApiId: apiId }).promise();

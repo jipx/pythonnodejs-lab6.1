@@ -9,7 +9,7 @@ const s3 = new AWS.S3();
 async function uploadFile() {
   try {
     // Specify your bucket name
-    const bucketName = '<FMI_1>';
+    const bucketName = 'jipx1234s3bucket1234';
 
     // Specify the local file path
     const filename = '/home/ec2-user/environment/pythonnodejs-lab6.1/resources/website/config.js';

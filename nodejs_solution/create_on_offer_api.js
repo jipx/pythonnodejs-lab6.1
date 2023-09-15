@@ -11,8 +11,8 @@ const apiGateway = new AWS.APIGateway();
 
 (async () => {
   try {
-    const apiId = '4gqyc7oasi';
-    const parentId = 'eblk1lr309';
+    const apiId = 'ksazeh1aph';
+    const parentId = '66a816';
 
     // Create a resource named 'on_offer'
     const createResourceResponse = await apiGateway.createResource({

@@ -12,7 +12,7 @@ async function uploadFile() {
     const bucketName = '<FMI_1>';
 
     // Specify the local file path
-    const filename = '/home/ec2-user/environment/resources/website/config.js';
+    const filename = '/home/ec2-user/environment/pythonnodejs-lab6.1/resources/website/config.js';
 
     // Specify the S3 key (object key) for the file
     const s3Key = 'config.js';

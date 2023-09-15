@@ -6,13 +6,13 @@
                "Principal": "*",
                "Action": "s3:GetObject",
                "Resource": [
-                   "arn:aws:s3:::<FMI-1>*",
-                   "arn:aws:s3:::<FMI-2>"
+                   "arn:aws:s3:::<FMI_1>*",
+                   "arn:aws:s3:::<FMI_2>"
                ],
                "Condition": {
                    "IpAddress": {
                        "aws:SourceIp": [
-                           "<FMI-3>/32"
+                           "<FMI_3>/32"
                        ]
                    }
                }
@@ -22,7 +22,7 @@
                "Effect": "Deny",
                "Principal": "*",
                "Action": "s3:GetObject",
-               "Resource": "arn:aws:s3:::<FMI-4>",
+               "Resource": "arn:aws:s3:::<FMI_4>",
                "Condition": {
                    "StringNotEquals": {
                        "s3:authtype": "REST-QUERY-STRING"
